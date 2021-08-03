@@ -31,10 +31,13 @@
   position: relative;
   top: 20%;
   left: 5%;
-  background: #856088;
+  background: #1f6048;
   box-shadow: 8px 10px 5px #888;
-  width: 80%;
+  padding: 5%;
+  color: #fff;
+  width: 60%;
   height: 40vh;
+  margin-top: 5%;
 }
 .form1{
   position: relative;
@@ -43,7 +46,8 @@
   width: 50%;
   left: 25%;
   height: 80vh;
-  background: #856088;
+  background: #1f6048;
+  box-shadow: 8px 10px 5px #888;
 }
 .form1 label{
   font-size: 30px;
@@ -53,11 +57,54 @@
   width: 50%;
   margin-left: 20%;
 }
+.form2{
+  position: relative;
+  margin-top: 5%;
+  display: grid;
+  width: 50%;
+  left: 25%;
+  height: auto;
+  background: #1f6048;
+  box-shadow: 8px 10px 5px #888;
+}
+.form2 div{
+  display: flex;
+  justify-content: space-between;
+}
+.form2 input{
+  display: none;
+}
+/*.form2 label{
+  height: 10%;
+  width: 10%;
+  font-size: 20px;
+  margin-top: 2%;
+  margin-right: 2%;
+  background: #fff;
+  transition: 0.5s;
+}
+.form2 label::before{
+  content: "Yes";
+  margin-left: 2%;
+}
+.form2 label::before:checked{
+  content: "No";
+  margin-left: 5%;
+}*/
 .fill{
+  background: #1a523d;
   text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  width: 5%;
+  padding: 5px 40px 5px 40px;
+  margin-bottom: 2%;
+}
+.fill:hover{
+  background: #fff;
   color: #000;
-  padding: 10px 50px;
 }
 .right{
-  float: right;
+  position: relative;
+  left: 80%
 }
