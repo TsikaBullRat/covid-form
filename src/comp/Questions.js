@@ -76,8 +76,9 @@ export const Questions = props => {
 
     const Change = e => {
 
-        console.log(e.target.value)
-        /*if(e.target.value = 1){
+
+        console.log(qna)
+        if(e.target.value = true){
             setQnA(qna.map((item, index) => {
                 if (index === parseInt(e.target.id)) {
                     item = {
@@ -99,7 +100,7 @@ export const Questions = props => {
                     return item
                 } else return item
             }))
-        }else if(e.target.value = 0){
+        }else{//if(e.target.value = false)
             setQnA(qna.map((item, index) => {
                 if (index === parseInt(e.target.id)) {
                     item = {
@@ -121,7 +122,7 @@ export const Questions = props => {
                     return item
                 } else return item
             }))
-        }*/
+        }
     }
 
     return (
@@ -130,7 +131,7 @@ export const Questions = props => {
                 {qna.map(item => {
                     return (<div className="qna">
                         <h2>{item.question}</h2>
-                        <input id={item.id} type="checkbox" onChange={Change} />
+                        <input id={item.id} type="checkbox" onClick={Change} value={item.answer}/>
                         <div style={style.box}>
                             <label htmlFor={item.id} style={item.style}>{item.text}</label>
                         </div>
