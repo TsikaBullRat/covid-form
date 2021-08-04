@@ -27,7 +27,6 @@ export const Questions = props => {
             answer: false,
             style: style.button,
             text: "No",
-            clicker: 1
         },
         {
             id: "1",
@@ -35,7 +34,6 @@ export const Questions = props => {
             answer: false,
             style: style.button,
             text: "No",
-            clicker: 1
         },
         {
             id: "2",
@@ -43,7 +41,6 @@ export const Questions = props => {
             answer: false,
             style: style.button,
             text: "No",
-            clicker: 1
         },
         {
             id: "3",
@@ -51,7 +48,6 @@ export const Questions = props => {
             answer: false,
             style: style.button,
             text: "No",
-            clicker: 1
         },
         {
             id: "4",
@@ -59,7 +55,6 @@ export const Questions = props => {
             answer: false,
             style: style.button,
             text: "No",
-            clicker: 1
         },
         {
             id: "5",
@@ -67,7 +62,6 @@ export const Questions = props => {
             answer: false,
             style: style.button,
             text: "No",
-            clicker: 1
         }
     ])
     const setBool = val => {
@@ -136,7 +130,7 @@ export const Questions = props => {
                 {qna.map(item => {
                     return (<div className="qna">
                         <h2>{item.question}</h2>
-                        <input id={item.id} type="checkbox" onChange={Change} /> {/* data-count={item.clicker} */}
+                        <input id={item.id} type="checkbox" onChange={Change} />
                         <div style={style.box}>
                             <label htmlFor={item.id} style={item.style}>{item.text}</label>
                         </div>
