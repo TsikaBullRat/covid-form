@@ -22,20 +22,38 @@ export const Questions = props => {
     const handleSubmit = () => {
         props.handleAnswers(answers)
     }
-    const Switch =() =>{
-        setLight({
-            style: {
-                height: '10%',
-                width: '50%',
-                fontSize: '20px',
-                marginLeft: '0%',
-                background: '#3cbc8d',
-                transition: '0.5s',
-                textAlign: 'center'
-            },
-            text: "Yes"
-        } 
-        )
+    const Switch = e =>{
+        var answer = e.target.value 
+
+        if( answer = true){
+            setLight({
+                style: {
+                    height: '10%',
+                    width: '50%',
+                    fontSize: '20px',
+                    marginLeft: '0%',
+                    background: '#3cbc8d',
+                    transition: '0.5s',
+                    textAlign: 'center'
+                },
+                text: "Yes"
+            } 
+            )
+        }else{
+            setLight({
+                style: {
+                    height: '10%',
+                    width: '50%',
+                    fontSize: '20px',
+                    marginLeft: '50%',
+                    background: '#3cbc8d',
+                    transition: '0.5s',
+                    textAlign: 'center'
+                },
+                text: "No"
+            })
+        }
+        
     }
     return (
         <div className="form2">
@@ -43,7 +61,7 @@ export const Questions = props => {
 
                 <div>
                     <h3>Do you have a fever?</h3>
-                    <input id="Q1" type="radio" onChange={change} />
+                    <input id="Q1" type="checkbox" onChange={change} />
                     <div className="switch">
                         <label htmlFor="Q1" style={light.style} onClick={Switch}>{light.text}</label>
                     </div>
