@@ -6,12 +6,12 @@ export const Questions = props => {
     const [light, setLight] = useState({
         style: {
             height: '10%',
-            width: '5%',
+            width: '50%',
             fontSize: '20px',
-            marginTop: '2%',
-            marginRight: '2%',
-            background: '#fff',
-            transition: '0.5s'
+            marginLeft: '50%',
+            background: '#3cbc8d',
+            transition: '0.5s',
+            textAlign: 'center'
         },
         text: "No"
     })
@@ -26,12 +26,12 @@ export const Questions = props => {
         setLight({
             style: {
                 height: '10%',
-                width: '5%',
+                width: '50%',
                 fontSize: '20px',
-                marginTop: '2%',
-                marginRight: '8%',
-                background: '#fff',
-                transition: '0.5s'
+                marginLeft: '0%',
+                background: '#3cbc8d',
+                transition: '0.5s',
+                textAlign: 'center'
             },
             text: "Yes"
         } 
@@ -44,7 +44,10 @@ export const Questions = props => {
                 <div>
                     <h3>Do you have a fever?</h3>
                     <input id="Q1" type="radio" onChange={change} />
-                    <label htmlFor="Q1" style={light.style} onClick={Switch}>{light.text}</label>
+                    <div className="switch">
+                        <label htmlFor="Q1" style={light.style} onClick={Switch}>{light.text}</label>
+                    </div>
+                    
                 </div>
 
 

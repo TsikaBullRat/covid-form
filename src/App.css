@@ -74,6 +74,13 @@
 .form2 input{
   display: none;
 }
+.switch{
+  margin-top: 2%;
+  margin-right: 2%;
+  background: #1a523d;
+  width: 20%;
+  height: 5%;
+}
 /*.form2 label{
   height: 10%;
   width: 10%;
