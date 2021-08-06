@@ -66,21 +66,32 @@
   height: 80vh;
   background: #1f6048;
   box-shadow: 8px 10px 5px #888;
+  padding-right: 10%;
 }
 .qna{
   display: flex;
   justify-content: space-between;
 }
 .form2 input{
-  /*display: none;*/
+  display: none;
 }
-/*.switch{
+.switch{
   margin-top: 2%;
   margin-right: 2%;
   background: #1a523d;
   width: 10%;
   height: 5%;
-}*/
+  overflow: hidden;
+}
+.switch label{
+  height: 10%;
+  width: 1000px;
+  padding: 0 20px;
+  font-size: 20px;
+  background: #3cbc8d;
+  transition: 0.5s;
+  text-align: center;
+}
 .fill{
   background: #1a523d;
   text-decoration: none;
