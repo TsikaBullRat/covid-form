@@ -1,10 +1,7 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-export const Firstpage = () => {
-
-    
-    const form_info = (
+export const Endpage = () =>{
+    return(
         <div className="my_card">
             <h1> Covid-19 Form</h1>
             <p>
@@ -14,12 +11,5 @@ export const Firstpage = () => {
             </p>
             <Link to='/personal_details' className="fill right">Fill Form</Link>
         </div>
-    )
-    
-
-    return (
-        <>
-            {form_info}
-        </>
     )
 }
