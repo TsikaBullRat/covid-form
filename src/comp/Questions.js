@@ -128,7 +128,7 @@ export const Questions = props => {
                     return (<div className="qna">
                         <h2>{item.question}</h2>
                         <input id={item.id} type="checkbox" onClick={Change} value={item.answer} />
-                        <div style={style.box}>
+                      <div style={style.box}>
                             <label htmlFor={item.id} style={item.style}>{item.text}</label>
                         </div>
                     </div>)
